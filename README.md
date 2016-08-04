@@ -3,7 +3,7 @@
 
 ## WARNING
 ## USE AT YOUR OWN RISK. SOFTWARE MAY CAUSE DATA LOSS, SYSTEM CRASHES, AND RED EYES.
-### Read-only system for phpbb boards.
+### Read-only system for phpbb 3.1+ boards.
 
 ## Description
 jRO-phpbb provide read-only access for a forum members. When you send a warning to the offending user, they are
