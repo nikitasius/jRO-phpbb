@@ -70,6 +70,8 @@ same time you can remove active read-only by giving a `zero` time:
 
 > sorry mate <3
 
+Or you can write just "`RO:{space_here}`", it's equal to `RO: 0m`
+
 or you can use it directly in line, like:
 > Because of spam you got RO: 1d , relax 1 day!
 
