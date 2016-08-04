@@ -27,7 +27,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class JROPHPBB implements Runnable {
-    private boolean debug = false;
+    private boolean debug = true;
     private String dbLogin, dbPassw, dbDb, dbHost, dbPort, dbLine;
     private String purgeCacheURI, roGroup, modGroups, defRank;
     private final String[] args;
