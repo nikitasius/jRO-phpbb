@@ -36,9 +36,9 @@ Thats all. Part of the logic is in the program, part on the mysql side (which wo
 ## How to work `with`
 * moderator create a warning for a user which contain **line** `RO`/`LS`/`РО`  (РО - russian letters "R" and "O") and
 time i.e. `RO:{space}XXd{space}YYh{space}ZZZm` where is
-`XX` - days, `YY` - hours, `ZZZ` - minutes and `{space}` - spacebar.
+`XX` - days, `YY` - hours, `ZZZ` - minutes and `{space}` - a space punctuation symbol equal to ` `.
 
-(!) Spacebars are **important** (!)
+(!) Spaces are **important** (!)
 
 1 minute read-only:
 > RO: 1m
