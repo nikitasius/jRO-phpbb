@@ -33,6 +33,8 @@ which doesn't contain a `LOG_USER_WARNING_BODY` in a `log_operation` column;
 
 Thats all. Part of the logic is in the program, part on the mysql side (which work pretty fast)
 
+###This system `doesn't move` user into the read-only group, this system `ADD` user into the read-only group. This system `doesn't require` special `permissions` for your moderators they `just` have to `write warnings`.
+
 ## How to work `with`
 * moderator create a warning for a user which contain **line** `RO`/`LS`/`РО`  (РО - russian letters "R" and "O") and
 time i.e. `RO:{space}XXd{space}YYh{space}ZZZm` where is
@@ -170,6 +172,7 @@ Here is an **OPTIONAL** queries `/sql/90-phpbb_posts_log.sql` and `/sql/91-phpbb
 ###PHPBB board
 * You need to create the `read-only` group if doesn't exists (group what provide read-only access with revoked write)
 * You need to create a new rank what will be used for read-only users, i.e. "Have fun in read-only mode" etc.
+* Read-only group example can be found in [`/img/`](/img/) directory.
 
 **OPTIONAL** tricks:
 * if you use a nginx, you can create the rank with a name `readonlyuserrank`
