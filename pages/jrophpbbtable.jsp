@@ -32,7 +32,10 @@
 
         private final JspWriter out;
 
-        private HashMap<Integer, String> dict = new HashMap<Integer, String>();
+        /*
+        I've added some comments for people who can port this page on PHP using PHPBB login credentials from config file
+         */
+        private HashMap<Integer, String> dict = new HashMap<Integer, String>(); // here we keep a translations
 
         final String
                 FORUM_URI = "http://example.com/forum", //REPLACE,   `//example.com/forum` in case if you work on HTTP&HTTPS
@@ -68,6 +71,11 @@
             }
         }
 
+        /**
+         * Replaces some symbols when finding it
+         * @param line
+         * @return corrected string
+         */
         private String replaceChars(String line) {
             return line
                     .replace("<", "&lt;")
@@ -83,6 +91,11 @@
             e.printStackTrace();
         }
 
+        /**
+         * Loading ditionary. Simple query to `phpbb_jrolang` table.
+         * Writes result (`id`:`t`) into HashMap and `id` is a key
+         * It mean `key=id` from `phpbb_jrolang` table.
+         */
         private void loadDict() {
             try (Connection conn = DriverManager.getConnection(this.dbLine, this.dbLogin, this.dbPassw);
                  Statement st = conn.createStatement();
@@ -101,6 +114,11 @@
             System.out.println(Calendar.getInstance().getTime() + "|" + x);
         }
 
+        /**
+         * writes a read-only history from board. Simple query[0] from a query array, `getString("columnName")` just get some String data by colum names as `columnName`.
+         * While we have rows, we are filling `sb` with same text fragment and replacing {parts} with column values.
+         * once `while` is finished, we are inserting result into the page.
+         */
         private void getReadOnlyUsersList() {
             if (!this.showRecords) return;
             StringBuilder sb = new StringBuilder();
@@ -149,6 +167,11 @@
         rvm.showRecords = false;
         return;
     }
+    /*
+    below is html code.
+    `rvm.dict.get(0)` mean element with key=0 from hashmap what equal row with `id=0` `from phpbb_jrolang`
+    `rvm.FORUM_URI` - just a simple access to variable `FORUM_URI`.
+     */
 %>
 <html>
 <head>
