@@ -185,7 +185,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.8/js/dataTables.bootstrap.min.js"></script>
 </head>
 <body>
-<h3 align="center"><%=rvm.dict.get(5)%> <a href="<%=rvm.FORUM_URI%>" target="_blank">&nbsp;<%=rvm.FORUM_NAME%>
+<h3 align="center"><%=rvm.dict.get(17)%> <a href="<%=rvm.FORUM_URI%>" target="_blank">&nbsp;<%=rvm.FORUM_NAME%>
 </a></h3>
 
 <div align="center">
