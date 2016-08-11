@@ -110,9 +110,10 @@ Multiple records separated by `,` i.e `26,27` and `62,63`.
 * `/compiled/java_7` - compiled for `Java 7` (`1.7.0_65-b17`)
 * `/compiled/java_8` - compiled for `Java 8` (`1.8.0_102-b14`)
 
-* `/pages/` - here are `jrophpbbtable.jsp` - an interactive JSP page with read-only users. Working example can be fond
-[**here**](http://ru-eve.com/tools/showreadonly.html) and `purgecache.php` - a php script which will purge board's
-cache on execution.
+* `/pages/` - here are `jrophpbbtable.jsp` - an interactive JSP page with read-only users, an example can be fond
+[**here**](http://ru-eve.com/tools/showreadonly.html), `jbanphpbbtable.jsp` - an interactive JSP page with banned users,
+an example can be fond [**here**](http://ru-eve.com/tools/showbanlist.html), `purgecache.php` - a php script which will
+purge board's cache on execution.
 
 * `/sql/` - here are SQL queries for your database. They all well tested and work with MySQL.
 
@@ -165,9 +166,10 @@ Here is an **OPTIONAL** queries `/sql/90-phpbb_posts_log.sql` and `/sql/91-phpbb
 
 ###Web pages
 * copy a file `/pages/purgecache.php` in your board's ROOT folder and **rename** it (the file).
-* **Read**, **EDIT**, copy a file `/pages/jrophpbbtable.jsp` in your JSP continer's ROOT page folder. Same time you can ignore this step
-(if you don't need this page) or you can code this on `PHP` using queries from current JSP table and page as template
-(live example can be found [here](http://ru-eve.com/tools/showreadonly.html))
+* **Read**, **EDIT**, copy `/pages/jrophpbbtable.jsp` and `/pages/jbanphpbbtable.jsp` in your JSP continer's ROOT page
+folder. Same time you can ignore this step (if you don't need this pages) or you can code this on `PHP` using queries
+from current JSP table and page as template (live example can be found [here](http://ru-eve.com/tools/showreadonly.html)
+and [here](http://ru-eve.com/tools/showbanlist.html))
 
 ###PHPBB board
 * You need to create the `read-only` group if doesn't exists (group what provide read-only access with revoked write)
