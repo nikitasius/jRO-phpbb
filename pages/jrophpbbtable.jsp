@@ -1,5 +1,5 @@
 <%--
-   jrophpbbtable.jsp - interactive page display read-only users
+   jrophpbbtable.jsp - interactive page that display read-only users
     Copyright (C) 2016  Nikita S. <nikita@saraeff.net>
 
     This file is part of jRO-phpbb.
