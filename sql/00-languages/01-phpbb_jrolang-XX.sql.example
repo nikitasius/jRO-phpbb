@@ -43,4 +43,5 @@ INSERT INTO `phpbb_jrolang` (`id`, `t`) VALUES
 	(12, 'Status'),
 	(13, 'RESET'),
 	(14, 'All page\'s changes are saved into LocalStorage (hidden cols, filtres, etc.)'),
-	(15, 'This warning was removed from `phpbb_log` table');
+	(15, 'This warning was removed from `phpbb_log` table'),
+	(16, 'Never expire');

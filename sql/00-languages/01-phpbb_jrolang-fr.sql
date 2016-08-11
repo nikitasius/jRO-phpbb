@@ -43,4 +43,5 @@ INSERT INTO `phpbb_jrolang` (`id`, `t`) VALUES
 	(12, 'Statut'),
 	(13, 'Réinitialisation'),
 	(14, 'Tous les changements sauvegardés dans le LocalStorage (filtres, etc)'),
-	(15, 'Cette avertissement étai supprimé de la table `phpbb_log`');
+	(15, 'Cette avertissement étai supprimé de la table `phpbb_log`'),
+	(16, 'Jamais');
