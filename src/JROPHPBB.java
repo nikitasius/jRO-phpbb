@@ -377,7 +377,7 @@ public class JROPHPBB implements Runnable {
             );
             System.exit(0);
         } else try {
-            new Thread(new JROPHPBB(args)).start();
+            new JROPHPBB(args).run();
         } catch (Throwable t) {
             System.err.println(Calendar.getInstance().getTime() + "|" + Thread.currentThread().getStackTrace()[1].toString());
             t.printStackTrace();
