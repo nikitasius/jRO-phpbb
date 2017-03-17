@@ -1,0 +1,412 @@
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.8/css/dataTables.bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.8/js/jquery.dataTables.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.8/js/dataTables.bootstrap.min.js"></script>
+</head>
+<body>
+<h3 align="center">Read-only table from the forum<a href="http://example.com/forum" target="_blank">&nbsp;My Example
+    Forum</a></h3>
+
+<div align="center">
+    Hide cols: <a class="toggle-vis" data-column="1">[Subject]</a> -
+    <a class="toggle-vis" data-column="2">[Object]</a> -
+    <a class="toggle-vis" data-column="3">[From date]</a> -
+    <a class="toggle-vis" data-column="4">[Till date]</a> -
+    <a class="toggle-vis" data-column="5">[Reason]</a> -
+    <a class="toggle-vis" data-column="6">[Status]</a> - -
+    <a onclick="resetTable();"><strong>RESET</strong></a>
+</div>
+<p style="font-size: small" align="center">(!) All page's changes are saved into LocalStorage (hidden cols, filtres,
+    etc.) (!)</p>
+<table id="jrophpbb-readonly-users-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Subject</th>
+        <th>Object</th>
+        <th>From date</th>
+        <th>Till date</th>
+        <th>Reason</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>#</th>
+        <th>Subject</th>
+        <th>Object</th>
+        <th>From date</th>
+        <th>Till date</th>
+        <th>Reason</th>
+        <th>Status</th>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <tr>
+        <td>32</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-08 13:55:35.0</td>
+        <td>2016-08-15 13:55:35.0</td>
+        <td>RO: 7d</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-08 13:52:14.0</td>
+        <td>2016-08-08 13:52:14.0</td>
+        <td>RO:</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-04 15:09:27.0</td>
+        <td>2016-08-11 15:09:27.0</td>
+        <td>Let's pur for 7 days in RO: 7d</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-04 14:32:34.0</td>
+        <td>2016-08-04 14:33:34.0</td>
+        <td>TEST LS: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-04 13:57:31.0</td>
+        <td>2016-08-04 13:58:31.0</td>
+        <td>RO: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-03 18:55:21.0</td>
+        <td>2016-08-03 18:56:21.0</td>
+        <td>RO: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-03 18:47:40.0</td>
+        <td>2016-08-03 18:49:40.0</td>
+        <td>test RO: 2m rigth now!<br>Example that you can write in same time</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-02 18:30:53.0</td>
+        <td>2016-08-02 18:31:53.0</td>
+        <td>RO: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-02 18:30:53.0</td>
+        <td>2016-08-02 18:32:53.0</td>
+        <td>RO: 2m</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-02 17:25:30.0</td>
+        <td>2016-08-02 17:27:30.0</td>
+        <td>RO: 2m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-02 13:23:15.0</td>
+        <td>2016-08-02 13:24:15.0</td>
+        <td>RO: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-02 13:18:49.0</td>
+        <td>2016-08-02 13:19:49.0</td>
+        <td>Test for github<br>RO: 1m<br>very bad user!</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-02 12:51:41.0</td>
+        <td>2016-08-02 12:52:41.0</td>
+        <td>GitHub test<br>RO: 1m<br>bad, bad user!</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-08-01 19:18:05.0</td>
+        <td>2016-08-01 19:19:05.0</td>
+        <td>RO: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-07-31 12:09:49.0</td>
+        <td>2016-07-31 12:10:49.0</td>
+        <td>Test ro for 1 minute<br>RO: 1m<br>test</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-07-31 11:32:09.0</td>
+        <td>2016-07-31 11:33:09.0</td>
+        <td>RO: 1m test</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-07-31 11:28:17.0</td>
+        <td>2016-07-31 11:29:17.0</td>
+        <td>text blablabla<br>LS: 1m<br>RORORO! 1 min test</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-07-31 10:49:23.0</td>
+        <td>2016-07-31 10:50:23.0</td>
+        <td>RO: 1m</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2016-02-29 09:54:42.0</td>
+        <td>2016-03-03 09:54:42.0</td>
+        <td>test for phpbb forum<br>RO: 3d</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-09-08 19:51:29.0</td>
+        <td>2015-09-22 19:51:29.0</td>
+        <td>РО: 14d<br>2 недельки)</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 21:49:22.0</td>
+        <td>2015-08-28 21:49:22.0</td>
+        <td>работает:)<br>РО: 7d</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 21:47:52.0</td>
+        <td>2015-08-21 21:47:52.0</td>
+        <td>снимаю РО: для теста смены звания (розовое)</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 21:35:02.0</td>
+        <td>2015-08-28 21:35:02.0</td>
+        <td>снова РО на 7 дней<br><br>РО: 7d</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 21:33:31.0</td>
+        <td>2015-08-21 21:33:31.0</td>
+        <td>снимаю РО: !</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 20:56:30.0</td>
+        <td>2015-08-28 20:56:30.0</td>
+        <td>Спитфайр похерил тесты.. чтож<br>новый тест новой фичи<br>РО: 7d</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=48" target="_blank">Spitfire</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 20:15:29.0</td>
+        <td>2015-09-20 20:15:29.0</td>
+        <td>Это предупреждение, относящееся к следующему вашему сообщению: https://forum.ru-eve.com/viewtopic.php?f=23&amp;p=121#p121.<br><br>Спит
+            случайно криворукий и все тесты похерил :( ибо нефиг!<br>RO: 30d
+        </td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 17:57:57.0</td>
+        <td>2015-08-28 17:57:57.0</td>
+        <td>This warning was removed from `phpbb_log` table</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 17:46:26.0</td>
+        <td>2015-08-21 20:46:26.0</td>
+        <td>This warning was removed from `phpbb_log` table</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-21 17:37:56.0</td>
+        <td>2015-08-21 17:38:56.0</td>
+        <td>This warning was removed from `phpbb_log` table</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-20 20:07:59.0</td>
+        <td>2015-08-22 20:07:59.0</td>
+        <td>This warning was removed from `phpbb_log` table</td>
+        <td>Overwritten</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-20 20:04:59.0</td>
+        <td>2015-08-20 20:05:59.0</td>
+        <td>This warning was removed from `phpbb_log` table</td>
+        <td>Finished and removed</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=2" target="_blank">nikitas</a></td>
+        <td><a href="http://example.com/forum/memberlist.php?mode=viewprofile&u=62" target="_blank">ruEVEtestUser</a>
+        </td>
+        <td>2015-08-20 16:57:24.0</td>
+        <td>2015-08-23 17:02:24.0</td>
+        <td>This warning was removed from `phpbb_log` table</td>
+        <td>Overwritten</td>
+    </tr>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var table = $('#jrophpbb-readonly-users-table').DataTable({
+            "bPaginate": true,
+            "bLengthChange": true,
+            "bFilter": true,
+            "bSort": true,
+            "bInfo": true,
+            "bProcessing": true,
+            "bStateSave": true,
+            "bAutoWidth": true,
+            "order": [
+                [0, "desc"]
+            ]
+        });
+        $('a.toggle-vis').on('click', function (e) {
+            e.preventDefault();
+
+            // Get the column API object
+            var column = table.column($(this).attr('data-column'));
+
+            // Toggle the visibility
+            column.visible(!column.visible());
+        });
+    });
+    function resetTable() {
+        localStorage.removeItem('DataTables_jrophpbb-readonly-users-table_/tools/showreadonly.html');
+        location.reload();
+    }
+</script>
+</body>
+</html>
