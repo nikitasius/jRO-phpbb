@@ -168,8 +168,16 @@ Here is an **OPTIONAL** queries `/sql/90-phpbb_posts_log.sql` and `/sql/91-phpbb
 * copy a file `/pages/purgecache.php` in your board's ROOT folder and **rename** it (the file).
 * **Read**, **EDIT**, copy `/pages/jrophpbbtable.jsp` and `/pages/jbanphpbbtable.jsp` in your JSP continer's ROOT page
 folder. Same time you can ignore this step (if you don't need this pages) or you can code this on `PHP` using queries
-from current JSP table and page as template (live example can be found [here](http://ru-eve.com/tools/showreadonly.html)
-and [here](http://ru-eve.com/tools/showbanlist.html))
+from current JSP table and page as template (live example can be found here:
+ * [jbanphpbbtable-en](https://github.saraeff.net/jRO-phpbb/pages/demo/jbanphpbbtable-en.html)
+ * [jbanphpbbtable-ru](https://github.saraeff.net/jRO-phpbb/pages/demo/jbanphpbbtable-ru.html)
+ * [jbanphpbbtable-fr](https://github.saraeff.net/jRO-phpbb/pages/demo/jbanphpbbtable-fr.html)
+ * and
+ * [jrophpbbtable-en](https://github.saraeff.net/jRO-phpbb/pages/demo/jrophpbbtable-en.html)
+ * [jrophpbbtable-ru](https://github.saraeff.net/jRO-phpbb/pages/demo/jrophpbbtable-ru.html)
+ * [jrophpbbtable-fr](https://github.saraeff.net/jRO-phpbb/pages/demo/jrophpbbtable-fr.html)
+
+Or in `/pages/demo` directory inside this repo.
 
 ###PHPBB board
 * You need to create the `read-only` group if doesn't exists (group what provide read-only access with revoked write)

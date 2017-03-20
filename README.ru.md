@@ -164,8 +164,17 @@
 * скопировать файл `/pages/purgecache.php` в корень форума и **переименовать** его.
 * **Прочитать**, **ОТРЕДАКТИРОВАТЬ** и скопировать файлы `/pages/jrophpbbtable.jsp` и `/pages/jbanphpbbtable.jsp` в
 корень страниц вашего JSP-контейнера. В то же время этот шаг можно пропустить (если вам не нужна эти таблички) или вы
-можете переписать сею страницу на `PHP` используя JSP страницу как образец (живые примеры
-[тут](http://ru-eve.com/tools/showreadonly.html) и [тут](http://ru-eve.com/tools/showbanlist.html))
+можете переписать сею страницу на `PHP` используя JSP страницу как образец.
+Живые примеры:
+ * [jbanphpbbtable-en](https://github.saraeff.net/jRO-phpbb/pages/demo/jbanphpbbtable-en.html)
+ * [jbanphpbbtable-ru](https://github.saraeff.net/jRO-phpbb/pages/demo/jbanphpbbtable-ru.html)
+ * [jbanphpbbtable-fr](https://github.saraeff.net/jRO-phpbb/pages/demo/jbanphpbbtable-fr.html)
+ * и
+ * [jrophpbbtable-en](https://github.saraeff.net/jRO-phpbb/pages/demo/jrophpbbtable-en.html)
+ * [jrophpbbtable-ru](https://github.saraeff.net/jRO-phpbb/pages/demo/jrophpbbtable-ru.html)
+ * [jrophpbbtable-fr](https://github.saraeff.net/jRO-phpbb/pages/demo/jrophpbbtable-fr.html)
+
+Или в папке `/pages/demo` этого проекта.
 
 ###PHPBB форум
 * Вам надо создать `read-only` группу если она еще не создана (группа, которая не дает писать на форуме)
